@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+/* Simple hero overlay utility */
+.hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.3)); }
