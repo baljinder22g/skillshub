@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# skillshub
-Created a repo for the Skillhub Mohali 
-=======
 # SkillsHub • Gurudwara Singh Sabha (Phase 1)
 
 A modern, mobile-first static website (React + Vite + TailwindCSS) for your community skill center.
@@ -38,4 +34,3 @@ npm run preview
 - Google Maps embed uses the Gurudwara coordinates (30.7276554, 76.7170392).
 - Registration button links to Google Forms placeholder – replace with your form link.
 - All images are local SVGs for fast, license-safe rendering.
->>>>>>> 2ee0ef4 (Initial commit - Skill Center Website)
