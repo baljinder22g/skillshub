@@ -63,7 +63,7 @@ export default function Courses() {
       <div className="mt-10 p-6 bg-brand-700 text-white rounded-2xl text-center">
         <h3 className="text-xl font-semibold">Register your interest (ਦਿਲਚਸਪੀ ਦਰਜ ਕਰੋ)</h3>
         <p className="mt-1 text-sm opacity-90">Fill a quick Google Form so we can schedule your batch.</p>
-        <a href="https://forms.gle/" target="_blank" rel="noreferrer"
+        <a href="https://forms.gle/WAmZgnTbMznav3vt5" target="_blank" rel="noreferrer"
            className="inline-block mt-4 bg-white text-brand-700 px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg">
           Open Registration Form
         </a>
