@@ -3,8 +3,6 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="relative h-[60vh] sm:h-[70vh] flex items-center justify-center">
-        <img src="/assets/images/hero-banner.svg" alt="Community Learning"
-             className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 hero-overlay"></div>
         <div className="relative text-center text-white px-4">
           <h1 className="text-3xl sm:text-5xl font-extrabold drop-shadow">ਸਿੱਖਿਆ ਸਭ ਲਈ • Education for All</h1>
