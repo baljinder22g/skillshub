@@ -6,9 +6,9 @@ export default function DigitalFraudTutor() {
         <h3 className="text-xl font-semibold text-brand-700">Your Tutor</h3>
         <p className="mt-3 text-gray-700">
           {/* Replace with actual tutor details */}
-          Mr. Amanpreet Singh<br/>
+          Mr. Gurmeet Singh<br/>
+          Former Chief Manager, Canara Bank
           Cybersecurity Enthusiast & Volunteer<br/>
-          5+ years experience in digital safety education
         </p>
         <p className="mt-4 text-gray-600">
           Reach out for queries: <a href="mailto:info@skillshub.co.in" className="underline text-brand-700">info@skillshub.co.in</a>

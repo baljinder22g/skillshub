@@ -79,7 +79,7 @@ export default function Courses() {
             </ul>
             <div className="mt-6">
               <a
-                href="YOUR_NEW_GOOGLE_FORM_LINK_FOR_FRAUD"
+                href="https://forms.gle/vzDwRuzdM12dz1Wo7"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block bg-brand-700 text-white px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg"
@@ -109,7 +109,7 @@ export default function Courses() {
             </ul>
             <div className="mt-6">
               <a
-                href="YOUR_GOOGLE_FORM_LINK_FOR_GENAI"
+                href="https://forms.gle/4S22csQBU5fRjbhi7"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block bg-brand-700 text-white px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg"
