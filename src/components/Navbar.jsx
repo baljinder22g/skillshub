@@ -1,25 +1,53 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useLang } from './LanguageContext.jsx'
+
+const navLabels = {
+  en: {
+    home: 'Home',
+    courses: 'Courses',
+    about: 'About',
+    contact: 'Contact',
+    switch: 'ਪੰਜਾਬੀ',
+  },
+  pa: {
+    home: 'ਮੁੱਖ ਪੰਨਾ',
+    courses: 'ਕੋਰਸ',
+    about: 'ਬਾਰੇ',
+    contact: 'ਸੰਪਰਕ',
+    switch: 'English',
+  }
+}
 
 const navLinkClass = ({ isActive }) =>
   `px-3 py-2 rounded-lg text-sm font-medium ${isActive ? 'bg-white/20' : 'hover:bg-white/10'}`
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { lang, toggleLang } = useLang()
+  const labels = navLabels[lang]
 
   return (
     <header className="sticky top-0 z-50 bg-brand-700 text-white shadow">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt="SkillsHub" className="h-8 w-8" />
-          <span className="text-lg sm:text-xl font-bold">SkillsHub @ GSS Phase 1</span>
+          <img src="logo.svg" alt="SkillsHub Logo" className="h-10 w-10 rounded-lg shadow" />
+          <span className="text-lg sm:text-xl font-bold">
+            {lang === 'en' ? 'SkillsHub @ GSS Phase 1' : 'ਸਕਿਲਸਹੱਬ @ ਜੀਐੱਸਐੱਸ ਫੇਜ਼ 1'}
+          </span>
         </Link>
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-1">
-          <NavLink to="/" className={navLinkClass}>Home</NavLink>
-          <NavLink to="/courses" className={navLinkClass}>Courses</NavLink>
-          <NavLink to="/about" className={navLinkClass}>About</NavLink>
-          <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
+          <NavLink to="/" className={navLinkClass}>{labels.home}</NavLink>
+          <NavLink to="/courses" className={navLinkClass}>{labels.courses}</NavLink>
+          <NavLink to="/about" className={navLinkClass}>{labels.about}</NavLink>
+          <NavLink to="/contact" className={navLinkClass}>{labels.contact}</NavLink>
+          <button
+            className="ml-4 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold"
+            onClick={toggleLang}
+          >
+            {labels.switch}
+          </button>
         </nav>
         {/* Mobile menu button */}
         <button
@@ -35,10 +63,16 @@ export default function Navbar() {
       {/* Mobile menu dropdown */}
       {menuOpen && (
         <nav className="sm:hidden bg-brand-700 px-4 pb-3 flex flex-col gap-1">
-          <NavLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>Home</NavLink>
-          <NavLink to="/courses" className={navLinkClass} onClick={() => setMenuOpen(false)}>Courses</NavLink>
-          <NavLink to="/about" className={navLinkClass} onClick={() => setMenuOpen(false)}>About</NavLink>
-          <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>Contact</NavLink>
+          <NavLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.home}</NavLink>
+          <NavLink to="/courses" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.courses}</NavLink>
+          <NavLink to="/about" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.about}</NavLink>
+          <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.contact}</NavLink>
+          <button
+            className="mt-2 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold"
+            onClick={() => { toggleLang(); setMenuOpen(false); }}
+          >
+            {labels.switch}
+          </button>
         </nav>
       )}
     </header>
