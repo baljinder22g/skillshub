@@ -8,6 +8,7 @@ const navLabels = {
     courses: 'Courses',
     about: 'About',
     contact: 'Contact',
+    admin: 'Admin',
     switch: 'ਪੰਜਾਬੀ',
   },
   pa: {
@@ -15,6 +16,7 @@ const navLabels = {
     courses: 'ਕੋਰਸ',
     about: 'ਬਾਰੇ',
     contact: 'ਸੰਪਰਕ',
+    admin: 'ਐਡਮਿਨ',
     switch: 'English',
   }
 }
@@ -42,6 +44,8 @@ export default function Navbar() {
           <NavLink to="/courses" className={navLinkClass}>{labels.courses}</NavLink>
           <NavLink to="/about" className={navLinkClass}>{labels.about}</NavLink>
           <NavLink to="/contact" className={navLinkClass}>{labels.contact}</NavLink>
+          <NavLink to="/admin" className={navLinkClass}>{labels.admin}</NavLink>
+
           <button
             className="ml-4 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold"
             onClick={toggleLang}
@@ -67,6 +71,7 @@ export default function Navbar() {
           <NavLink to="/courses" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.courses}</NavLink>
           <NavLink to="/about" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.about}</NavLink>
           <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.contact}</NavLink>
+          <NavLink to="/admin" className={navLinkClass} onClick={() => setMenuOpen(false)}>{labels.admin}</NavLink>
           <button
             className="mt-2 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold"
             onClick={() => { toggleLang(); setMenuOpen(false); }}
