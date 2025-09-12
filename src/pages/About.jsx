@@ -53,7 +53,7 @@ export default function About() {
         </h3>
         <div className="rounded-xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.123456789!2d76.722345!3d30.704649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedc123456789%3A0xabcdef123456789!2sGurudwara%20Singh%20Sabha%20Phase%201%2C%20Mohali!5e0!3m2!1sen!2sin!4v1694091234567!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.122982781326!2d76.7170392!3d30.7276554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee6ed76a447b%3A0x72c76d1642a026c9!2sGurudwara%20Singh%20Sabha!5e0!3m2!1sen!2sin!4v1694091234567!5m2!1sen!2sin"
             width="100%"
             height="350"
             style={{ border: 0 }}

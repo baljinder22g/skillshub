@@ -28,7 +28,7 @@ export default function Contact() {
       <p className="mb-6 text-gray-700">{t.desc}</p>
       <ul className="space-y-2 text-gray-700">
         <li><strong>{t.email}:</strong> <a href="mailto:info@skillshub.co.in" className="underline text-brand-700">info@skillshub.co.in</a></li>
-        <li><strong>{t.phone}:</strong> <a href="tel:+919876543210" className="underline text-brand-700">+91-9876543210</a></li>
+        <li><strong>{t.phone}:</strong> <a href="tel:+91 9855340340" className="underline text-brand-700">+91-9876543210</a></li>
         <li><strong>{t.address}:</strong> {t.addressText}</li>
       </ul>
     </section>
