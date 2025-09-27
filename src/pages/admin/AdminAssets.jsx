@@ -170,8 +170,35 @@ export default function AdminAssets() {
 
   return (
     <div>
-      <h3 className="text-xl font-semibold text-brand-700 mb-4">{t.title}</h3>
-      <p className="mb-6">{t.desc}</p>
+    <h3 className="text-xl font-semibold text-brand-700 mb-4">{t.title}</h3>
+      <div className="mb-6">
+        {lang === 'en' && (
+          <>
+            <h4 className="font-semibold mb-1">Description (English)</h4>
+            <p>
+              A dedicated asset management system will be implemented to ensure the security and transparency of all assets (such as computers, projectors, tables, chairs, etc.) used in the Skill Hub Center.<br />
+              • Each asset will be tagged with a unique ID and complete information (owner, model, date of purchase/donation, usage status, etc.) will be recorded in the asset register.<br />
+              • For donated assets, the donor's name will be clearly mentioned. Under this arrangement, the donor will remain the owner of the asset and will dedicate it for use by the center. If at any time the donor wishes to take back their asset, they can do so without any hindrance.
+              </p>
+              <p>
+              <strong>
+
+                We are looking for Donors who can donate us the Computer.</strong>
+            </p>
+          </>
+        )}
+        {lang === 'pa' && (
+          <>
+            <h4 className="font-semibold mb-1">ਵੇਰਵਾ (Punjabi)</h4>
+            <p>
+              ਸਕਿੱਲਹਬ ਸੈਂਟਰ ਵਿੱਚ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਸਾਰੇ ਅਸੈੱਟ (ਜਿਵੇਂ ਕੰਪਿਊਟਰ, ਪ੍ਰੋਜੈਕਟਰ, ਮੇਜ਼, ਕੁਰਸੀਆਂ ਆਦਿ) ਦੀ ਸੁਰੱਖਿਆ ਅਤੇ ਪਾਰਦਰਸ਼ਤਾ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਅਸੈੱਟ ਪ੍ਰਬੰਧਨ ਪ੍ਰਣਾਲੀ ਲਾਗੂ ਕੀਤੀ ਜਾਵੇਗੀ।<br />
+              • ਹਰ ਅਸੈੱਟ ਨੂੰ ਇੱਕ ਵਿਲੱਖਣ ਆਈ.ਡੀ. ਦੇ ਕੇ ਟੈਗ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਪੂਰੀ ਜਾਣਕਾਰੀ (ਮਾਲਕ, ਮਾਡਲ, ਖਰੀਦ/ਦਾਨ ਦੀ ਤਾਰੀਖ, ਵਰਤੋਂ ਦੀ ਸਥਿਤੀ ਆਦਿ) ਅਸੈੱਟ ਰਜਿਸਟਰ ਵਿੱਚ ਦਰਜ ਕੀਤੀ ਜਾਵੇਗੀ।<br />
+              • ਦਾਨ ਕੀਤੇ ਅਸੈੱਟਾਂ ‘ਤੇ ਦਾਨੀ ਦਾ ਨਾਮ ਸਪਸ਼ਟ ਤੌਰ ‘ਤੇ ਦਰਜ ਕੀਤਾ ਜਾਵੇਗਾ। ਇਸ ਤਹਿਤ, ਦਾਨੀ ਅਸੈੱਟ ਦਾ ਮਾਲਕ ਰਹੇਗਾ ਅਤੇ ਸੈਂਟਰ ਨੂੰ ਉਨ੍ਹਾਂ ਅਸੈੱਟਾਂ ਦੀ ਵਰਤੋਂ ਲਈ ਸਮਰਪਿਤ ਕਰੇਗਾ। ਜੇ ਕਿਸੇ ਸਮੇਂ ਦਾਨੀ ਨੂੰ ਆਪਣਾ ਅਸੈੱਟ ਵਾਪਸ ਲੈਣ ਦੀ ਲੋੜ ਪਵੇ, ਤਾਂ ਉਹ ਅਸੈੱਟ ਨੂੰ ਬਿਨਾਂ ਕਿਸੇ ਰੁਕਾਵਟ ਦੇ ਵਾਪਸ ਲੈ ਸਕਦਾ ਹੈ।
+            </p>
+             <strong>We are looking for Donors who can donate us the Computer.</strong>
+          </>
+        )}
+      </div>
       <div className="flex gap-4 mb-4">
         <button
           onClick={handleDownloadCSV}
