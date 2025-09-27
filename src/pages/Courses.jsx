@@ -8,9 +8,11 @@ const labels = {
     basic: 'Basic Computer Education',
     fraud: 'Digital Fraud Awareness',
     genai: 'Introduction to GenAI & AgenticAI',
+    professional: 'Professional IT Courses',
     registerBasic: 'Register for Basic Computer Education',
     registerFraud: 'Register for Digital Fraud Session',
     registerGenai: 'Register for GenAI & AgenticAI Course',
+    registerProfessional: 'Register for Professional IT Courses',
     meetTutor: 'Meet the Tutor',
     basicDesc: 'Learn the fundamentals of computers, internet, and digital skills for everyday life.',
     basicList: [
@@ -34,16 +36,34 @@ const labels = {
       'Hands-on with popular GenAI tools (ChatGPT, Copilot, etc.)',
       'Ethics, safety, and responsible use of AI',
       'How Agentic AI can automate tasks and workflows'
-    ]
+    ],
+    professionalDesc: 'These courses are for students pursuing graduation in computer subjects or graduates in any subject looking for a career in IT jobs. Choose from a wide range of professional IT courses:',
+    professionalList: [
+      'Cloud Computing (AWS, Azure, GCP)',
+      'Java Development',
+      'Web Designing',
+      'Web Development',
+      'DevOps',
+      'ServiceNow',
+      'Automation Testing',
+      'Artificial Intelligence (AI)',
+      'ETL & Data Engineering',
+      'Agile Courses',
+      'Low Code Platforms (e.g., Power Platform, Mendix, OutSystems)',
+      'And many more...'
+    ],
+    professionalNote: 'Registration is open for: Kids pursuing graduation in computer subjects or any graduate looking for a career in IT jobs.'
   },
   pa: {
     title: 'ਪੇਸ਼ ਕੀਤੇ ਕੋਰਸ',
     basic: 'ਮੁੱਢਲਾ ਕੰਪਿਊਟਰ ਸਿੱਖਿਆ',
     fraud: 'ਡਿਜ਼ੀਟਲ ਧੋਖਾਧੜੀ ਜਾਗਰੂਕਤਾ',
     genai: 'GenAI ਅਤੇ AgenticAI ਦਾ ਪਰਚਿਆ',
+    professional: 'ਪ੍ਰੋਫੈਸ਼ਨਲ IT ਕੋਰਸ',
     registerBasic: 'ਮੁੱਢਲੇ ਕੰਪਿਊਟਰ ਕੋਰਸ ਲਈ ਰਜਿਸਟਰ ਕਰੋ',
     registerFraud: 'ਡਿਜ਼ੀਟਲ ਧੋਖਾਧੜੀ ਸੈਸ਼ਨ ਲਈ ਰਜਿਸਟਰ ਕਰੋ',
     registerGenai: 'GenAI & AgenticAI ਕੋਰਸ ਲਈ ਰਜਿਸਟਰ ਕਰੋ',
+    registerProfessional: 'ਪ੍ਰੋਫੈਸ਼ਨਲ IT ਕੋਰਸ ਲਈ ਰਜਿਸਟਰ ਕਰੋ',
     meetTutor: 'ਟਿਊਟਰ ਨੂੰ ਮਿਲੋ',
     basicDesc: 'ਕੰਪਿਊਟਰ, ਇੰਟਰਨੈੱਟ ਅਤੇ ਡਿਜ਼ੀਟਲ ਹੁਨਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਜਾਣਕਾਰੀਆਂ ਸਿੱਖੋ।',
     basicList: [
@@ -67,7 +87,23 @@ const labels = {
       'GenAI ਟੂਲ (ChatGPT, Copilot ਆਦਿ) ਨਾਲ ਹੱਥ-ਉੱਤੇ ਅਭਿਆਸ',
       'AI ਦੀ ਨੈਤਿਕਤਾ, ਸੁਰੱਖਿਆ ਅਤੇ ਜ਼ਿੰਮੇਵਾਰ ਵਰਤੋਂ',
       'AgenticAI ਨਾਲ ਟਾਸਕ ਅਤੇ ਵਰਕਫਲੋ ਆਟੋਮੇਟ ਕਰਨਾ'
-    ]
+    ],
+    professionalDesc: 'ਇਹ ਕੋਰਸ ਉਹ ਵਿਦਿਆਰਥੀਆਂ ਲਈ ਹਨ ਜੋ ਕੰਪਿਊਟਰ ਵਿਸ਼ਿਆਂ ਵਿੱਚ ਗ੍ਰੈਜੂਏਸ਼ਨ ਕਰ ਰਹੇ ਹਨ ਜਾਂ ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਗ੍ਰੈਜੂਏਟ ਹਨ ਅਤੇ IT ਨੌਕਰੀਆਂ ਵਿੱਚ ਕਰੀਅਰ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹਨ। ਹੇਠ ਲਿਖੇ ਵਿਸ਼ਿਆਂ ਵਿੱਚੋਂ ਚੁਣੋ:',
+    professionalList: [
+      'ਕਲਾਊਡ ਕੰਪਿਊਟਿੰਗ (AWS, Azure, GCP)',
+      'ਜਾਵਾ ਡਿਵੈਲਪਮੈਂਟ',
+      'ਵੈੱਬ ਡਿਜ਼ਾਈਨਿੰਗ',
+      'ਵੈੱਬ ਡਿਵੈਲਪਮੈਂਟ',
+      'DevOps',
+      'ServiceNow',
+      'ਆਟੋਮੇਸ਼ਨ ਟੈਸਟਿੰਗ',
+      'ਕ੍ਰਿਤ੍ਰਿਮ ਬੁੱਧੀ (AI)',
+      'ETL ਅਤੇ ਡਾਟਾ ਇੰਜੀਨੀਅਰਿੰਗ',
+      'ਐਜਾਈਲ ਕੋਰਸ',
+      'ਲੋ ਕੋਡ ਪਲੇਟਫਾਰਮ (Power Platform, Mendix, OutSystems ਆਦਿ)',
+      'ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ...'
+    ],
+    professionalNote: 'ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਖੁੱਲ੍ਹੀ ਹੈ: ਉਹ ਵਿਦਿਆਰਥੀ ਜੋ ਕੰਪਿਊਟਰ ਵਿਸ਼ਿਆਂ ਵਿੱਚ ਗ੍ਰੈਜੂਏਸ਼ਨ ਕਰ ਰਹੇ ਹਨ ਜਾਂ ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਗ੍ਰੈਜੂਏਟ ਹਨ ਅਤੇ IT ਨੌਕਰੀਆਂ ਵਿੱਚ ਕਰੀਅਰ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹਨ।'
   }
 }
 
@@ -110,6 +146,16 @@ export default function Courses() {
         >
           {t.genai}
         </button>
+        <button
+          className={`px-4 py-2 rounded-t-lg font-semibold ${
+            activeTab === 'professional'
+              ? 'bg-brand-700 text-white'
+              : 'bg-gray-200 text-brand-700'
+          }`}
+          onClick={() => setActiveTab('professional')}
+        >
+          {t.professional}
+        </button>
       </div>
       <div className="bg-white rounded-b-xl shadow p-6">
         {activeTab === 'basic' && (
@@ -121,7 +167,7 @@ export default function Courses() {
             </ul>
             <div className="mt-6">
               <a
-                href="YOUR_GOOGLE_FORM_LINK_FOR_BASIC_COMPUTER"
+                href="https://forms.gle/wwwKXe8CPtWueMKs6"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block bg-brand-700 text-white px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg"
@@ -170,6 +216,26 @@ export default function Courses() {
                 className="inline-block bg-brand-700 text-white px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg"
               >
                 {t.registerGenai}
+              </a>
+            </div>
+          </div>
+        )}
+        {activeTab === 'professional' && (
+          <div>
+            <h3 className="text-xl font-semibold text-brand-700">💼 {t.professional}</h3>
+            <p className="mt-2 text-gray-700">{t.professionalDesc}</p>
+            <ul className="mt-4 list-disc list-inside text-gray-700 space-y-1">
+              {t.professionalList.map((item, i) => <li key={i}>{item}</li>)}
+            </ul>
+            <div className="mt-4 text-brand-700 font-medium">{t.professionalNote}</div>
+            <div className="mt-6">
+              <a
+                href="https://forms.gle/LHCR2GSgWcnxgEAV6"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block bg-brand-700 text-white px-6 py-3 rounded-xl font-semibold shadow hover:shadow-lg"
+              >
+                {t.registerProfessional}
               </a>
             </div>
           </div>
